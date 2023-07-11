@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm House</title>
+    <link rel="icon" href="images/favicon1.png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+    <script src="bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <header><a href="index.html"><img src="images/logo.png" alt="Rhythm house logo" title="Rhythm House - RecordStore" width="15%" class="logo"></a></header>
+    <!-- navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="index.html"><i class="fa-solid fa-house"></i> home</a></li>
+            <li class="dropdownbtn"><a href="browse.html#music"><i class="fa-solid fa-music"></i> music</a>
+                <ul class="dropdown mdh">
+                    <li class="dropdown-category">
+                        <div>Genre :</div>
+                        <ul>
+                            <li><a href="browse.html#urdu-music">Urdu Music</a></li>
+                            <li><a href="browse.html#lofi-pop">lofi</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-category">
+                        <div>Age :</div>
+                        <ul>
+                            <li><a href="browse.html#urdu-music">adults</a></li>
+                            <li><a href="browse.html#lofi-pop">teens</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdownbtn"><a href="browse.html#movies"><i class="fa-solid fa-clapperboard"></i> movies</a>
+                <ul class="dropdown mdh">
+                    <li class="dropdown-category">
+                        <div>Genre :</div>
+                        <ul>
+                            <li><a href="browse.html#documentary">documentaries</a></li>
+                            <li><a href="browse.html#bollywood-movies">bollywood</a></li>
+                            <li><a href="#Placeholder">animated</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-category">
+                        <div>Age :</div>
+                        <ul>
+                            <li><a href="browse.html#documentary">adults</a></li>
+                            <li><a href="browse.html#bollywood-movies">teens</a></li>
+                            <li><a href="#Placeholder">kids</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="mdh"><a href="browse.html"><i class="fa-regular fa-folder-open"></i> Browse</a></li>
+            <li class="dropdownbtn mdh"><a href="events.html"><i class="fa-solid fa-calendar-days"></i> Events</a>
+                <ul class="dropdown">
+                    <li class="dropdown-category">
+                        <div>type :</div>
+                        <ul>
+                            <li><a href="events.html#concerts"> Concerts</a></li>
+                            <li><a href="events.html#contests"> contests</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdownbtn float-r more"><a href="#Placeholder"><i class="fa-solid fa-bars"></i></a>
+                <ul class="dropdown">
+                    <li class="mds"><a href="browse.html"><i class="fa-regular fa-folder-open"></i> Browse</a></li>
+                    <li class="mds"><a href="events.html"><i class="fa-solid fa-calendar-days"></i> Events</a></li>
+                    <li class="mds"><a href="browse.html"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+                    </li>
+                    <li><a href="membership.html"><i class="fa-solid fa-address-card"></i> Memebrship</a></li>
+                    <li><a href="aboutus.html"><i class="fa-solid fa-circle-info"></i> About us</a></li>
+                    <li><a href="aboutus.html#contact"><i class="fa-solid fa-phone-volume"></i> Contact</a></li>
+                </ul>
+            </li>
+            <form action="browse.html"><li class="float-r mdh"><label for="search"><a href="browse.html"><i class="fa-solid fa-magnifying-glass"></i></a></label></li>
+            <li class="float-r mdh"><input type="text" placeholder="Search" name="search" id="search"></li></form>
+        </ul>
+    </nav>
+    <!-- card rows -->
+    <div class="container p-1em">
+        <div class="row"><div class="row-title"><div class="row-name">Current Events</div><a href="events.html" class="row-link">view all <i class="fa-solid fa-arrow-right"></i></a></div>
+            <div class="w-50 float-l p-1em"><a href="events.html#contests"><div class="p-1em bg-1 br-12px hover"><img class="br-6px" src="images/contest (1).jpg" width="100%"></div></a></div>
+            <div class="w-50 float-l p-1em"><a href="events.html#contests"><div class="p-1em bg-1 br-12px hover"><img class="br-6px" src="images/contest (2).jpg" width="100%"></div></a></div>
+        </div>
+        <div class="row"><div class="row-title"><div class="row-name">Urdu Music</div><a href="browse.html#urdu-music" class="row-link">view all <i class="fa-solid fa-arrow-right"></i></a></div>
+            <a href="pages/music/Abdul Hannan - Bikhra.html"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="pages/music/cover/Abdul Hannan - Bikhra.jpg" width="100%" alt="Abdul Hannan - Bikhra"></div>
+                <div class="card-title mt-05em">Bikhra</div>
+                <div class="card-title color-1 fs-08em">Abdul Hannan</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 28.6M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/music/Abdul Hannan - Haaray.html"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="pages/music/cover/Abdul Hannan - Haaray.jpg" width="100%" alt="Abdul Hannan - Haaray"></div>
+                <div class="card-title mt-05em">Haaray</div>
+                <div class="card-title color-1 fs-08em">Abdul Hannan</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 6.76M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/music/Asim Azhar - Habibi.html" class="smh"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="pages/music/cover/Asim Azhar - Habibi.jpg" width="100%" alt="Asim Azhar - Habibi"></div>
+                <div class="card-title mt-05em">Habibi</div>
+                <div class="card-title color-1 fs-08em">Asim Azhar</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 13.2M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/music/Bayaan - Tifl.html" class="mdh"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="pages/music/cover/Bayaan - Tifl.jpg" width="100%" alt="Bayaan - Tifl"></div>
+                <div class="card-title mt-05em">Tifl</div>
+                <div class="card-title color-1 fs-08em">Bayaan</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 247K - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/music/Bayaan - Faryaad.html" class="lgh"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="pages/music/cover/Bayaan - Faryaad.jpg" width="100%" alt="Bayaan - Faryaad"></div>
+                <div class="card-title mt-05em">Faryaad</div>
+                <div class="card-title color-1 fs-08em">Bayaan</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 498K - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/music/Bayaan - Hum Nadaan.html" class="xlh"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="pages/music/cover/Bayaan - Hum Nadaan.jpg" width="100%" alt="Bayaan - Hum Nadaan"></div>
+                <div class="card-title mt-05em">Hum Nadaan</div>
+                <div class="card-title color-1 fs-08em">Bayaan</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 209K - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/music/Abdul Hannan - Siyah.html" class="xxlh"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="pages/music/cover/Abdul Hannan - Siyah.jpg" width="100%" alt="Abdul Hannan - Siyah"></div>
+                <div class="card-title mt-05em">Siyah</div>
+                <div class="card-title color-1 fs-08em">Abdul Hannan</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 7.58M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+        </div>
+        <div class="row"><div class="row-title"><div class="row-name">Lofi Beats & Pop</div><a href="browse.html#lofi-pop" class="row-link">view all <i class="fa-solid fa-arrow-right"></i></a></div>
+            <a href="pages/music/Lofi Fruits Music - Oblivion.html"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="pages/music/cover/Lofi Fruits Music - Oblivion.jpg" width="100%" alt="Lofi Fruits Music - Oblivion"></div>
+                <div class="card-title mt-05em fs-95em">Oblivion</div>
+                <div class="card-title color-1 fs-08em">Lofi Fruits Music</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 6.97M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/music/Kid Travis - Atomic Ever After.html"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="pages/music/cover/Kid Travis - Atomic Ever After.jpg" width="100%" alt="Kid Travis - Atomic Ever After"></div>
+                <div class="card-title mt-05em fs-95em">Atomic Ever</div>
+                <div class="card-title color-1 fs-08em">Kid Travis</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.27M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/music/Slo-Fi Ghost - Bubbly.html" class="smh"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="pages/music/cover/Slo-Fi Ghost - Bubbly.jpg" width="100%" alt="Slo-Fi Ghost - Bubbly"></div>
+                <div class="card-title mt-05em fs-95em">Bubbly</div>
+                <div class="card-title color-1 fs-08em">Slo-Fi Ghost</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 6.08M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/music/Lofi Fruits Music - I_ll Keep You Safe.html" class="mdh"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="pages/music/cover/Lofi Fruits Music - I_ll Keep You Safe.jpg" width="100%" alt="Lofi Fruits Music - I_ll Keep You Safe"></div>
+                <div class="card-title mt-05em fs-95em">Keep You Safe</div>
+                <div class="card-title color-1 fs-08em">Lofi Fruits Music</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 2.96M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/music/Powfu - death bed (coffee for your head).html" class="lgh"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="pages/music/cover/Powfu - death bed (coffee for your head).jpg" width="100%" alt="Powfu - death bed (coffee for your head)"></div>
+                <div class="card-title mt-05em fs-95em">death bed</div>
+                <div class="card-title color-1 fs-08em">Powfu</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.42B - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/music/coldbrew - simple..html" class="xlh"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="pages/music/cover/coldbrew - simple..jpg" width="100%" alt="coldbrew - simple."></div>
+                <div class="card-title mt-05em fs-95em">simple.</div>
+                <div class="card-title color-1 fs-08em">coldbrew</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 19.5M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/music/CORBAL - Dance with Me.html" class="xxlh"><div class="card float-l bg-2 br-12px">
+                <div><img class="br-6px" src="pages/music/cover/CORBAL - Dance with Me.jpg" width="100%" alt="CORBAL - Dance with Me"></div>
+                <div class="card-title mt-05em fs-95em">Dance with Me</div>
+                <div class="card-title color-1 fs-08em">CORBAL</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 106M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+        </div>
+        <div class="row"><div class="row-title"><div class="row-name">animated</div><a href="browse.html#animated" class="row-link">view all <i class="fa-solid fa-arrow-right"></i></a></div>
+        <a href="pages/kids/The Croods.html"><div class="card float-l bg-2 br-12px">
+            <div><img class="poster br-6px" src="pages/kids/cover/The Croods.jpg" width="100%" alt="The Croods"></div>
+            <div class="card-title mt-05em">The Croods</div>
+            <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+        </div></a>
+        <a href="pages/kids/Encanto.html"><div class="card float-l bg-2 br-12px">
+            <div><img class="poster br-6px" src="pages/kids/cover/Encanto.jpg" width="100%" alt="Encanto"></div>
+            <div class="card-title mt-05em">Encanto</div>
+            <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+        </div></a>
+        <a href="pages/kids/The Angry Birds Movie.html" class="smh"><div class="card float-l bg-2 br-12px">
+            <div><img class="poster br-6px" src="pages/kids/cover/The Angry Birds Movie.jpg" width="100%" alt="The Angry Birds Movie"></div>
+            <div class="card-title mt-05em">Angry Birds</div>
+            <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+        </div></a>
+        <a href="pages/kids/Home.html" class="mdh"><div class="card float-l bg-2 br-12px">
+            <div><img class="poster br-6px" src="pages/kids/cover/Home.jpg" width="100%" alt="Home"></div>
+            <div class="card-title mt-05em">Home</div>
+            <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+        </div></a>
+        <a href="pages/kids/Kung Fu Panda 1.html" class="lgh"><div class="card float-l bg-2 br-12px">
+            <div><img class="poster br-6px" src="pages/kids/cover/Kung Fu Panda.jpg" width="100%" alt="Kung Fu Panda"></div>
+            <div class="card-title mt-05em">Kung Fu Panda</div>
+            <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+        </div></a>
+        <a href="pages/kids/Kung Fu Panda 2.html" class="xlh"><div class="card float-l bg-2 br-12px">
+            <div><img class="poster br-6px" src="pages/kids/cover/Kung Fu Panda 2.jpg" width="100%" alt="Kung Fu Panda 2"></div>
+            <div class="card-title mt-05em">Kung Fu Panda 2</div>
+            <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+        </div></a>
+        <a href="pages/kids/Kung Fu Panda 3.html" class="xxlh"><div class="card float-l bg-2 br-12px">
+            <div><img class="poster br-6px" src="pages/kids/cover/Kung Fu Panda 3.jpg" width="100%" alt="Kung Fu Panda 3"></div>
+            <div class="card-title mt-05em">Kung Fu Panda 3</div>
+            <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+        </div></a>
+        </div>
+        <div class="row"><div class="row-title"><div class="row-name">bollywood movies</div><a href="browse.html#bollywood-movies" class="row-link">view all <i class="fa-solid fa-arrow-right"></i></a></div>
+            <a href="pages/movies/Dasara.html"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="pages/movies/cover/Dasara.jpg" width="100%" alt="Dasara"></div>
+                <div class="card-title mt-05em">Dasara</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/movies/Angrezi Medium.html"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="pages/movies/cover/angrezi medium.jpg" width="100%" alt="angrezi medium"></div>
+                <div class="card-title mt-05em">angrezi</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/movies/Bheed.html" class="smh"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="pages/movies/cover/bheed.jpg" width="100%" alt="bheed"></div>
+                <div class="card-title mt-05em">bheed</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/movies/Bala.html" class="mdh"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="pages/movies/cover/bala.jpg" width="100%" alt="bala"></div>
+                <div class="card-title mt-05em">bala</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/movies/Bholaa.html" class="lgh"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="pages/movies/cover/Bholaa.jpg" width="100%" alt="Bholaa"></div>
+                <div class="card-title mt-05em">Bholaa</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/movies/Doctor G.html" class="xlh"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="pages/movies/cover/doctor G.jpg" width="100%" alt="doctor G"></div>
+                <div class="card-title mt-05em">doctor G</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/movies/Goodbye.html" class="xxlh"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="pages/movies/cover/goodbye.jpg" width="100%" alt="goodbye"></div>
+                <div class="card-title mt-05em">goodbye</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+        </div>
+        <div class="row"><div class="row-title"><div class="row-name">documentaries</div><a href="browse.html#documentary" class="row-link">view all <i class="fa-solid fa-arrow-right"></i></a></div>
+            <a href="pages/documentary/American Manhunt.html"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="pages/documentary/cover/American Manhunt The Boston Marathon Bombing.jpg" width="100%" alt="American Manhunt: The Boston Marathon Bombing"></div>
+                <div class="card-title mt-05em">Manhunt</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/documentary/Lewis Capaldi How I_m Feeling Now.html"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="pages/documentary/cover/Lewis Capaldi How I_m Feeling Now.jpg" width="100%" alt="Lewis Capaldi: How I'm Feeling Now"></div>
+                <div class="card-title mt-05em">Lewis Capaldi</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/documentary/The World at War.html" class="smh"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="pages/documentary/cover/The World at War.jpg" width="100%" alt="The World at War"></div>
+                <div class="card-title mt-05em">World at War</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/documentary/Clarkson_s Farm.html" class="mdh"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="pages/documentary/cover/Clarkson_s Farm.jpg" width="100%" alt="Clarkson's Farm"></div>
+                <div class="card-title mt-05em">Clarkson's Farm</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/documentary/Rennervations.html" class="lgh"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="pages/documentary/cover/Rennervations.jpg" width="100%" alt="Rennervations"></div>
+                <div class="card-title mt-05em">Rennervations</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/documentary/Welcome to Wrexham.html" class="xlh"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="pages/documentary/cover/Welcome to Wrexham.jpg" width="100%" alt="Welcome to Wrexham"></div>
+                <div class="card-title mt-05em">Wrexham</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+            <a href="pages/documentary/Cosmos A Spacetime Odyssey.html" class="xxlh"><div class="card float-l bg-2 br-12px">
+                <div><img class="poster br-6px" src="pages/documentary/cover/Cosmos A Spacetime Odyssey.jpg" width="100%" alt="Cosmos: A Spacetime Odyssey"></div>
+                <div class="card-title mt-05em">Cosmos</div>
+                <div class="card-desc"><i class="fa-solid fa-eye"></i> 1.23M - <i class="fa-solid fa-star"></i> 5 / 5</div>
+            </div></a>
+        </div>
+        <div class="row"><div class="row-title"><div class="row-name">Become a member</div><a href="membership.html" class="row-link">view all <i class="fa-solid fa-arrow-right"></i></a></div>
+            <div class="w-50 float-l p-1em lgh"><a href="membership.html"><div class="p-1em bg-1 br-12px hover"><img class="br-6px" src="images/membership1.png" width="100%"></div></a></div>
+            <div class="w-50 float-l p-1em"><a href="membership.html"><div class="p-1em bg-1 br-12px hover"><img class="br-6px" src="images/membership2.png" width="100%"></div></a></div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="p-1em mt-1em">
+        <div class="container">
+            <div class="row">
+                <div class="w-75 float-l"><ul>
+                    <li class="card-title"><a href="index.html">home</a><a href="browse.html#music">Music</a><a href="browse.html#movies">Movies</a><a href="browse.html">Browse</a><a href="events.html">Events</a><a href="membership.html">Membership</a><a href="aboutus.html#contact">Contact</a><a href="aboutus.html">About</a></li>
+                    <li class="card-title mt-1em">follow us: <div class="socials"><a href="https://www.youtube.com/" target="_blank" class="youtube"><i class="fa-brands fa-youtube"></i></a><a href="https://twitter.com/" target="_blank" class="twitter"><i class="fa-brands fa-twitter"></i></a><a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a><a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://www.whatsapp.com/" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a><a href="https://www.tiktok.com/" target="_blank" class="tiktok"><i class="fa-brands fa-tiktok"></i></a></div></li>
+                    <li class="card-desc mt-1em fs-08em">Support : <a href="mailto:muhammadmohsinkhan.aptech@gmail.com" target="_blank">rhythmhouse@support.com</a> or <a href="tel:+923000000000" target="_blank">+92 300 0000000</a></li>
+                    <li class="card-desc mt-1em fs-08em" title="Made by Team B : Mohsin Khan">rhythmhouse.com is a property of RhythmHouse Co.,Ltd. ©2069 All Rights Reserved.</li>
+                    <li class="card-desc">This site is protected by reCAPTCHA and the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.</li>
+                </ul></div>
+                <div class="w-25 float-l lgh trans"><img src="images/logo.png" width="100%" alt="Rhythm house logo"></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

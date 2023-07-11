@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - Rhythm House</title>
+    <link rel="icon" href="images/favicon1.png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <header><a href="index.html"><img src="images/logo.png" alt="Rhythm house logo" title="Rhythm House - RecordStore" width="15%" class="logo"></a></header>
+    <!-- navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> home</a></li>
+            <li class="dropdownbtn"><a href="browse.html#music"><i class="fa-solid fa-music"></i> music</a>
+                <ul class="dropdown mdh">
+                    <li class="dropdown-category">
+                        <div>Genre :</div>
+                        <ul>
+                            <li><a href="browse.html#urdu-music">Urdu Music</a></li>
+                            <li><a href="browse.html#lofi-pop">lofi</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-category">
+                        <div>Age :</div>
+                        <ul>
+                            <li><a href="browse.html#urdu-music">adults</a></li>
+                            <li><a href="browse.html#lofi-pop">teens</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdownbtn"><a href="browse.html#movies"><i class="fa-solid fa-clapperboard"></i> movies</a>
+                <ul class="dropdown mdh">
+                    <li class="dropdown-category">
+                        <div>Genre :</div>
+                        <ul>
+                            <li><a href="browse.html#documentary">documentaries</a></li>
+                            <li><a href="browse.html#bollywood-movies">bollywood</a></li>
+                            <li><a href="#Placeholder">animated</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-category">
+                        <div>Age :</div>
+                        <ul>
+                            <li><a href="browse.html#documentary">adults</a></li>
+                            <li><a href="browse.html#bollywood-movies">teens</a></li>
+                            <li><a href="#Placeholder">kids</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="mdh"><a href="browse.html"><i class="fa-regular fa-folder-open"></i> Browse</a></li>
+            <li class="dropdownbtn mdh"><a href="events.html"><i class="fa-solid fa-calendar-days"></i> Events</a>
+                <ul class="dropdown">
+                    <li class="dropdown-category">
+                        <div>type :</div>
+                        <ul>
+                            <li><a href="events.html#concerts"> Concerts</a></li>
+                            <li><a href="events.html#contests"> contests</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdownbtn float-r more"><a href="#Placeholder"><i class="fa-solid fa-bars"></i></a>
+                <ul class="dropdown">
+                    <li class="mds"><a href="browse.html"><i class="fa-regular fa-folder-open"></i> Browse</a></li>
+                    <li class="mds"><a href="events.html"><i class="fa-solid fa-calendar-days"></i> Events</a></li>
+                    <li class="mds"><a href="browse.html"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+                    </li>
+                    <li><a href="membership.html"><i class="fa-solid fa-address-card"></i> Memebrship</a></li>
+                    <li><a href="aboutus.html"><i class="fa-solid fa-circle-info"></i> About us</a></li>
+                    <li><a href="aboutus.html#contact"><i class="fa-solid fa-phone-volume"></i> Contact</a></li>
+                </ul>
+            </li>
+            <form action="browse.html"><li class="float-r mdh"><label for="search"><a href="browse.html"><i class="fa-solid fa-magnifying-glass"></i></a></label></li>
+            <li class="float-r mdh"><input type="text" placeholder="Search" name="search" id="search"></li></form>
+        </ul>
+    </nav>
+    <!-- pop-up -->
+    <div class="popup-container" id="pop-up">
+        <form method="post" class="popup bg-1 p-2em br-12px">
+            <div class="title color-0 p-1em">we will reach out to you regarding your membership card and deliver it to your doorsteps</div>
+            <div class="input-container mt-1em">
+                <i class="fa-solid fa-user icon p-1em color-0 bg-0"></i>
+                <input class="input-field p-1em" type="text" placeholder="Username" name="username" required>
+            </div>
+            <div class="input-container mt-1em">
+                <i class="fa-solid fa-envelope icon p-1em color-0 bg-0"></i>
+                <input class="input-field p-1em" type="text" placeholder="Email" name="email" required>
+            </div>
+            <div class="input-container mt-1em">
+                <i class="fa-solid fa-phone icon p-1em color-0 bg-0"></i>
+                <input class="input-field p-1em" type="tel" placeholder="Phone" name="tel" required>
+            </div>
+            <div class="input-container mt-1em">
+                <i class="fa-solid fa-key icon p-1em color-0 bg-0"></i>
+                <input class="input-field p-1em" type="password" placeholder="Password" name="password" required>
+            </div>
+            <div class="input-container mt-1em">
+                <i class="fa-solid fa-location-dot icon pt-2em p-1em color-0 bg-0"></i>
+                <textarea class="input-field p-1em" rows="3" placeholder="Location" name="Location" required></textarea>
+            </div>
+            <button type="submit" class="btn mt-1em br-6px">Submit</button>
+            <button onclick="cancel()" type="button" class="btn mt-1em br-6px">Cancel</button>
+        </form>
+    </div>
+    <!-- main -->
+    <div class="container p-1em">
+        <div class="row p-2em">
+            <div class="w-50 p-2em float-l lgh"><img class="br-12px" src="images/membership1.png" width="100%" alt="membership1"></div>
+            <div class="w-50 p-2em float-l"><img class="br-12px" src="images/membership2.png" width="100%" alt="membership2"></div>
+        </div>
+        <div class="row bg-1 m-1em">
+            <div class="title mt-1em ml-1em">Membership</div>
+            <div class="desc">
+                Rhythm House offers a membership plan for customers who want to take advantage of exclusive benefits and discounts. Our membership program is designed to reward our most loyal customers and provide them with a more personalized and engaging shopping experience.<br> <br> As a Rhythm House member, you will receive a 10% discount on all purchases, both in-store and online. You will also have access to members-only events, such as live music performances, movie screenings, and meet-and-greets with artists and filmmakers. Additionally, you will receive early access to new releases, exclusive content, and personalized recommendations based on your preferences and purchase history.<br> <br> To become a member, simply sign up on our website or in-store and pay an annual fee of $50. You will receive a membership card and a welcome kit with special offers and promotions. Your membership will be valid for one year from the date of sign-up, after which you can renew it to continue enjoying the benefits.<br> <br> At "Rhythm House," we believe that our customers are more than just shoppers – they are part of a community of music and movie lovers who share a passion for culture and creativity. Our membership program is a way to show our appreciation for that community and create a more rewarding and engaging experience for our most dedicated customers.
+            </div>
+            <div class="m-1em"><button class="btn mt-1em br-6px order-btn trans" onclick="popup()">Register</button></div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="p-1em mt-1em">
+        <div class="container">
+            <div class="row">
+                <div class="w-75 float-l"><ul>
+                    <li class="card-title"><a href="index.html">home</a><a href="browse.html#music">Music</a><a href="browse.html#movies">Movies</a><a href="browse.html">Browse</a><a href="events.html">Events</a><a href="membership.html">Membership</a><a href="aboutus.html#contact">Contact</a><a href="aboutus.html">About</a></li>
+                    <li class="card-title mt-1em">follow us: <div class="socials"><a href="https://www.youtube.com/" target="_blank" class="youtube"><i class="fa-brands fa-youtube"></i></a><a href="https://twitter.com/" target="_blank" class="twitter"><i class="fa-brands fa-twitter"></i></a><a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a><a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://www.whatsapp.com/" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a><a href="https://www.tiktok.com/" target="_blank" class="tiktok"><i class="fa-brands fa-tiktok"></i></a></div></li>
+                    <li class="card-desc mt-1em fs-08em">Support : <a href="mailto:muhammadmohsinkhan.aptech@gmail.com" target="_blank">rhythmhouse@support.com</a> or <a href="tel:+923000000000" target="_blank">+92 300 0000000</a></li>
+                    <li class="card-desc mt-1em fs-08em" title="Made by Team B : Mohsin Khan">rhythmhouse.com is a property of RhythmHouse Co.,Ltd. ©2069 All Rights Reserved.</li>
+                    <li class="card-desc">This site is protected by reCAPTCHA and the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.</li>
+                </ul></div>
+                <div class="w-25 float-l lgh trans"><img src="images/logo.png" width="100%" alt="Rhythm house logo"></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

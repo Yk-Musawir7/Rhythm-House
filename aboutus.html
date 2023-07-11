@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Rhythm House</title>
+    <link rel="icon" href="images/favicon1.png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <header><a href="index.html"><img src="images/logo.png" alt="Rhythm house logo" title="Rhythm House - RecordStore" width="15%" class="logo"></a></header>
+    <!-- navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> home</a></li>
+            <li class="dropdownbtn"><a href="browse.html#music"><i class="fa-solid fa-music"></i> music</a>
+                <ul class="dropdown mdh">
+                    <li class="dropdown-category">
+                        <div>Genre :</div>
+                        <ul>
+                            <li><a href="browse.html#urdu-music">Urdu Music</a></li>
+                            <li><a href="browse.html#lofi-pop">lofi</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-category">
+                        <div>Age :</div>
+                        <ul>
+                            <li><a href="browse.html#urdu-music">adults</a></li>
+                            <li><a href="browse.html#lofi-pop">teens</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdownbtn"><a href="browse.html#movies"><i class="fa-solid fa-clapperboard"></i> movies</a>
+                <ul class="dropdown mdh">
+                    <li class="dropdown-category">
+                        <div>Genre :</div>
+                        <ul>
+                            <li><a href="browse.html#documentary">documentaries</a></li>
+                            <li><a href="browse.html#bollywood-movies">bollywood</a></li>
+                            <li><a href="#Placeholder">animated</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-category">
+                        <div>Age :</div>
+                        <ul>
+                            <li><a href="browse.html#documentary">adults</a></li>
+                            <li><a href="browse.html#bollywood-movies">teens</a></li>
+                            <li><a href="#Placeholder">kids</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="mdh"><a href="browse.html"><i class="fa-regular fa-folder-open"></i> Browse</a></li>
+            <li class="dropdownbtn mdh"><a href="events.html"><i class="fa-solid fa-calendar-days"></i> Events</a>
+                <ul class="dropdown">
+                    <li class="dropdown-category">
+                        <div>type :</div>
+                        <ul>
+                            <li><a href="events.html#concerts"> Concerts</a></li>
+                            <li><a href="events.html#contests"> contests</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdownbtn float-r more"><a href="#Placeholder"><i class="fa-solid fa-bars"></i></a>
+                <ul class="dropdown">
+                    <li class="mds"><a href="browse.html"><i class="fa-regular fa-folder-open"></i> Browse</a></li>
+                    <li class="mds"><a href="events.html"><i class="fa-solid fa-calendar-days"></i> Events</a></li>
+                    <li class="mds"><a href="browse.html"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+                    </li>
+                    <li><a href="membership.html"><i class="fa-solid fa-address-card"></i> Memebrship</a></li>
+                    <li><a href="aboutus.html"><i class="fa-solid fa-circle-info"></i> About us</a></li>
+                    <li><a href="aboutus.html#contact"><i class="fa-solid fa-phone-volume"></i> Contact</a></li>
+                </ul>
+            </li>
+            <form action="browse.html"><li class="float-r mdh"><label for="search"><a href="browse.html"><i class="fa-solid fa-magnifying-glass"></i></a></label></li>
+            <li class="float-r mdh"><input type="text" placeholder="Search" name="search" id="search"></li></form>
+        </ul>
+    </nav>
+    <!-- main -->
+    <div class="container p-1em">
+        <div class="row"><div class="row-title"><div class="row-name">About Us</div></div>
+            <div class="w-75 p-0 float-l p-1em">
+                <div class="lh color-1 p-2em bg-1 br-12px">
+                    Welcome to Rhythm House! We are a music and movie store that has been serving customers for over 30 years. Our mission is to provide a wide selection of high-quality music and movies to our customers, and to create a welcoming and engaging environment for everyone who visits our store or website. <br>At Rhythm House, you will find a vast array of music and movies spanning all genres and styles. From the latest chart-toppers to timeless classics, we have something for everyone. Our knowledgeable staff are passionate about music and movies and are always on hand to offer recommendations, advice, and insights to help you discover new artists and genres. <br><span class="color-2" id="dots">...</span><span id="readmore">We are proud to have recently launched our website, which offers an easy-to-use platform for browsing and purchasing products. On our website, you can find detailed product information, reviews, and previews, as well as the latest news and updates from the music and movie industry. <br>We believe that music and movies have the power to inspire, move, and connect people from all walks of life. At Rhythm House, we are dedicated to sharing that power with our customers and fostering a sense of community around music and movies. Whether you are a long-time fan or a newcomer to the world of music and movies, we invite you to come and explore our store or website and discover the rhythms that move you. <br></span><a onclick="readmore()" class="link" id="readmorebtn">Read more</a>
+                </div>
+            </div>
+            <div class="w-25 float-l"><img class="p-2em mt-1em" src="images/logo.png" width="100%" alt="Rhythm house logo"></div>
+        </div>
+        <div class="row" id="contact">
+            <div class="row-title"><div class="row-name">contact</div></div>
+            <div class="w-50 float-l p-2em">
+                <div class="lh color-1 p-2em bg-1 br-12px">
+                    <div class="color-0 fs-12em">Location</div>
+                    <div class="mt-1em fs-09em">A 563, Main Shahrah-e-Usman, Sector 11-A Sector 11 A North Karachi Twp, Karachi, Karachi City, Sindh</div>
+                    <div class="color-0 fs-12em mt-1em">E-mail</div>
+                    <div class="mt-1em fs-09em"><a class="link color-1" href="mailto:muhammadmohsinkhan.aptech@gmail.com" target="_blank">rhythmhouse@support.com</a></div>
+                    <div class="color-0 fs-12em mt-1em">Phone</div>
+                    <div class="mt-1em fs-09em"><a class="link color-1" href="tel:+923000000000" target="_blank">+92 300 0000000</a></div>
+                    <div class="card-title mt-1em">follow us: 
+                        <div class="socials"><a href="https://www.youtube.com/" target="_blank" class="youtube"><i class="fa-brands fa-youtube"></i></a><a href="https://twitter.com/" target="_blank" class="twitter"><i class="fa-brands fa-twitter"></i></a><a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a><a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://www.whatsapp.com/" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a><a href="https://www.tiktok.com/" target="_blank" class="tiktok"><i class="fa-brands fa-tiktok"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-50 float-l p-2em"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7233.0683905704545!2d67.065264!3d24.981958!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb340e584b891c3%3A0x29b2cbc198ba2dbd!2sAptech%20Computer%20Education%20North%20Karachi%20Center!5e0!3m2!1sen!2sus!4v1681936386717!5m2!1sen!2sus" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+        <div class="row">
+            <div class="row-title"><div class="row-name">credits & contributions</div></div>
+            <div class="w-50 float-l p-2em">
+                <div class="p-2em bg-1 br-12px">
+                    <div class="p-2em mt-1em bg-3 br-12px w-85 m-a"><img class="br-6px" src="images/Muhammad Mohsin Khan.jpg" width="100%" alt="Muhammad Mohsin Khan">
+                    <div class="fs-12em mt-1em">Muhammad Mohsin Khan</div>
+                    <div class="mt-1em"><a class="link ml-1em" href="mailto:muhammadmohsinkhan.aptech@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> Email</a><a class="link ml-1em facebook" href="https://www.facebook.com/donatedsalt" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a><a class="link ml-1em instagram" href="https://www.instagram.com/donatedsalt/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></div></div>
+                    <div class="w-85 m-a p-2em"><div>Contributions</div>
+                    <div class="fs-08em color-1 ml-1em mt-05em">coding, page manager, resource manager, theme manager, professional color picker, heavy lifter, objectively handsome.</div></div>
+                </div>
+            </div>
+            <div class="w-50 float-l p-2em">
+                <div class="p-2em bg-1 br-12px">
+                    <div class="p-2em mt-1em bg-3 br-12px w-85 m-a"><img class="br-6px" src="images/Musawir Ahmad.jpeg" width="100%" alt="Musawir Ahmad">
+                    <div class="fs-12em mt-1em">Musawir Ahmad</div>
+                    <div class="mt-1em"><a class="link ml-1em" href="mailto:musawirahmad586@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> Email</a><a class="link ml-1em facebook" href="https://www.facebook.com/profile.php?id=100067100556896&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a><a class="link ml-1em instagram" href="https://www.instagram.com/yasir_yk66/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></div></div>
+                    <div class="w-85 m-a p-2em"><div>Contributions</div>
+                    <div class="fs-08em color-1 ml-1em mt-05em">advisor, motivator, professional copy-paster, resource supplier, web browser, etc.</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="p-1em mt-1em">
+        <div class="container">
+            <div class="row">
+                <div class="w-75 float-l"><ul>
+                    <li class="card-title"><a href="index.html">home</a><a href="browse.html#music">Music</a><a href="browse.html#movies">Movies</a><a href="browse.html">Browse</a><a href="events.html">Events</a><a href="membership.html">Membership</a><a href="aboutus.html#contact">Contact</a><a href="aboutus.html">About</a></li>
+                    <li class="card-title mt-1em">follow us: <div class="socials"><a href="https://www.youtube.com/" target="_blank" class="youtube"><i class="fa-brands fa-youtube"></i></a><a href="https://twitter.com/" target="_blank" class="twitter"><i class="fa-brands fa-twitter"></i></a><a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a><a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://www.whatsapp.com/" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a><a href="https://www.tiktok.com/" target="_blank" class="tiktok"><i class="fa-brands fa-tiktok"></i></a></div></li>
+                    <li class="card-desc mt-1em fs-08em">Support : <a href="mailto:muhammadmohsinkhan.aptech@gmail.com" target="_blank">rhythmhouse@support.com</a> or <a href="tel:+923000000000" target="_blank">+92 300 0000000</a></li>
+                    <li class="card-desc mt-1em fs-08em" title="Made by Team B : Mohsin Khan">rhythmhouse.com is a property of RhythmHouse Co.,Ltd. ©2069 All Rights Reserved.</li>
+                    <li class="card-desc">This site is protected by reCAPTCHA and the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.</li>
+                </ul></div>
+                <div class="w-25 float-l lgh trans"><img src="images/logo.png" width="100%" alt="Rhythm house logo"></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

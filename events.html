@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Rhythm House</title>
+    <link rel="icon" href="images/favicon1.png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <header><a href="index.html"><img src="images/logo.png" alt="Rhythm house logo" title="Rhythm House - RecordStore" width="15%" class="logo"></a></header>
+    <!-- navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> home</a></li>
+            <li class="dropdownbtn"><a href="browse.html#music"><i class="fa-solid fa-music"></i> music</a>
+                <ul class="dropdown mdh">
+                    <li class="dropdown-category">
+                        <div>Genre :</div>
+                        <ul>
+                            <li><a href="browse.html#urdu-music">Urdu Music</a></li>
+                            <li><a href="browse.html#lofi-pop">lofi</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-category">
+                        <div>Age :</div>
+                        <ul>
+                            <li><a href="browse.html#urdu-music">adults</a></li>
+                            <li><a href="browse.html#lofi-pop">teens</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdownbtn"><a href="browse.html#movies"><i class="fa-solid fa-clapperboard"></i> movies</a>
+                <ul class="dropdown mdh">
+                    <li class="dropdown-category">
+                        <div>Genre :</div>
+                        <ul>
+                            <li><a href="browse.html#documentary">documentaries</a></li>
+                            <li><a href="browse.html#bollywood-movies">bollywood</a></li>
+                            <li><a href="#Placeholder">animated</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-category">
+                        <div>Age :</div>
+                        <ul>
+                            <li><a href="browse.html#documentary">adults</a></li>
+                            <li><a href="browse.html#bollywood-movies">teens</a></li>
+                            <li><a href="#Placeholder">kids</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="mdh"><a href="browse.html"><i class="fa-regular fa-folder-open"></i> Browse</a></li>
+            <li class="dropdownbtn mdh active"><a href="events.html"><i class="fa-solid fa-calendar-days"></i> Events</a>
+                <ul class="dropdown">
+                    <li class="dropdown-category">
+                        <div>type :</div>
+                        <ul>
+                            <li><a href="events.html#concerts"> Concerts</a></li>
+                            <li><a href="events.html#contests"> contests</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdownbtn float-r more"><a href="#Placeholder"><i class="fa-solid fa-bars"></i></a>
+                <ul class="dropdown">
+                    <li class="mds"><a href="browse.html"><i class="fa-regular fa-folder-open"></i> Browse</a></li>
+                    <li class="mds"><a href="events.html"><i class="fa-solid fa-calendar-days"></i> Events</a></li>
+                    <li class="mds"><a href="browse.html"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+                    </li>
+                    <li><a href="membership.html"><i class="fa-solid fa-address-card"></i> Memebrship</a></li>
+                    <li><a href="aboutus.html"><i class="fa-solid fa-circle-info"></i> About us</a></li>
+                    <li><a href="aboutus.html#contact"><i class="fa-solid fa-phone-volume"></i> Contact</a></li>
+                </ul>
+            </li>
+            <form action="browse.html"><li class="float-r mdh"><label for="search"><a href="browse.html"><i class="fa-solid fa-magnifying-glass"></i></a></label></li>
+            <li class="float-r mdh"><input type="text" placeholder="Search" name="search" id="search"></li></form>
+        </ul>
+    </nav>
+    <!-- pop-up -->
+    <div class="popup-container" id="pop-up">
+        <form method="post" class="popup bg-1 p-2em br-12px">
+            <div class="title color-0 p-1em">please enter your information here and we will contact you shortly.</div>
+            <div class="input-container mt-1em">
+                <i class="fa-solid fa-user icon p-1em color-0 bg-0"></i>
+                <input class="input-field p-1em" type="text" placeholder="Username" name="username" required>
+            </div>
+            <div class="input-container mt-1em">
+                <i class="fa-solid fa-envelope icon p-1em color-0 bg-0"></i>
+                <input class="input-field p-1em" type="text" placeholder="Email" name="email" required>
+            </div>
+            <div class="input-container mt-1em">
+                <i class="fa-solid fa-phone icon p-1em color-0 bg-0"></i>
+                <input class="input-field p-1em" type="tel" placeholder="Phone" name="tel" required>
+            </div>
+            <div class="input-container mt-1em">
+                <i class="fa-solid fa-key icon p-1em color-0 bg-0"></i>
+                <input class="input-field p-1em" type="password" placeholder="Password" name="password" required>
+            </div>
+            <button type="submit" class="btn mt-1em br-6px">Submit</button>
+            <button onclick="cancel()" type="button" class="btn mt-1em br-6px">Cancel</button>
+        </form>
+    </div>
+    <!-- main -->
+    <div class="container p-2em" id="concerts">
+        <div class="row-title"><div class="row-name color-0">Concerts</div></div>
+        <div class="row p-0 bg-1 p-2em">
+            <div class="w-50 float-l p-1em"><img class="br-12px" src="images/c1.jpg" width="100%" alt="Karachi Concert"></div>
+            <div class="w-50 float-l p-2em mt-1em pt-3em bg-2 br-12px">
+                <div class="title mt-1em">Karachi Concert</div>
+                <div class="desc">One of the biggest concerts event in Karachi history is being held at Karachi next month. Register now for more information about the concert</div>
+                <div class="desc color-0">Registeration Fees: <del class="color-2"> Rs.1500 </del> Rs.1000 
+                    <div class="desc desc-hover color-2 fs-08em">*seats are given in a first come first serve basis. our team will reach out to you with information about seating and more. members will get a special discounts and seating privlage for more information about membership <a class="link underline" href="membership.html">click here</a>.<br> if you have any quaries about the event please contact through our support email: <a class="link underline" href="mailto:muhammadmohsinkhan.aptech@gmail.com" target="_blank">rhythmhouse@support.com</a></div>
+                    <div class="desc color-0">Remaining Seats: 42</div>
+                </div><button class="btn mt-1em br-6px order-btn" onclick="popup()">register now</button>
+            </div>
+        </div>
+        <div class="row p-0 bg-1 p-2em mt-1em">
+            <div class="w-50 float-l p-1em"><img class="br-12px" src="images/c2.jpg" width="100%" alt="Lahore Concert"></div>
+            <div class="w-50 float-l p-2em mt-1em pt-3em bg-2 br-12px">
+                <div class="title mt-1em">Lahore Concert</div>
+                <div class="desc">One of the biggest concerts event in Lahore history is being held at Lahore next month. Register now for more information about the concert</div>
+                <div class="desc color-0">Registeration Fees: <del class="color-2"> Rs.2000 </del> Rs.1500 
+                    <div class="desc desc-hover color-2 fs-08em">*seats are given in a first come first serve basis. our team will reach out to you with information about seating and more. members will get a special discounts and seating privlage for more information about membership <a class="link underline" href="membership.html">click here</a>.<br> if you have any quaries about the event please contact through our support email: <a class="link underline" href="mailto:muhammadmohsinkhan.aptech@gmail.com" target="_blank">rhythmhouse@support.com</a></div>
+                    <div class="desc color-0">Remaining Seats: 26</div>
+                </div><button class="btn mt-1em br-6px order-btn" onclick="popup()">register now</button>
+            </div>
+        </div>
+    </div>
+    <div class="container p-2em" id="contests">
+        <div class="row-title"><div class="row-name color-0">Contests</div></div>
+        <div class="row p-0 bg-1 p-2em">
+            <div class="w-50 float-l p-1em"><img class="br-12px" src="images/contest (1).jpg" width="100%" alt="Karachi Concert"></div>
+            <div class="w-50 float-l p-2em mt-1em bg-2 br-12px">
+                <div class="title mt-1em">Live Singing Contest</div>
+                <div class="desc">Join our community in our semi-anual singing competition with hundreds of participants each year and get chance to win a prize money and trophy for the top 3 winnenrs</div>
+                <div class="desc color-0">Registeration Fees: <del class="color-2"> Rs.150 </del> Rs.100 
+                    <div class="desc desc-hover color-2 fs-08em">*seats are given in a first come first serve basis. our team will reach out to you with information about seating and more. members will receive special privlage for more information about membership <a class="link underline" href="membership.html">click here</a>. if you have any quaries about the event please contact through our support email: <a class="link underline" href="mailto:muhammadmohsinkhan.aptech@gmail.com" target="_blank">rhythmhouse@support.com</a></div>
+                    <div class="desc color-0">Remaining Seats: 3</div>
+                </div><button class="btn br-6px order-btn" onclick="popup()">register now</button>
+            </div>
+        </div>
+        <div class="row p-0 bg-1 p-2em mt-1em">
+            <div class="w-50 float-l p-1em"><img class="br-12px" src="images/contest (2).jpg" width="100%" alt="Lahore Concert"></div>
+            <div class="w-50 float-l p-2em mt-1em bg-2 br-12px">
+                <div class="title mt-1em">Best DJ Contest</div>
+                <div class="desc">Join our community in our semi-anual DJ competition with hundreds of participants each year and get a chance to win prize money and trophy for the top 3 winnenrs.</div>
+                <div class="desc color-0">Registeration Fees: <del class="color-2"> Rs.200 </del> Rs.150 
+                    <div class="desc desc-hover color-2 fs-08em">*seats are given in a first come first serve basis. our team will reach out to you with information about seating and more. members will receive special privlage for more information about membership <a class="link underline" href="membership.html">click here</a>. if you have any quaries about the event please contact through our support email: <a class="link underline" href="mailto:muhammadmohsinkhan.aptech@gmail.com" target="_blank">rhythmhouse@support.com</a></div>
+                    <div class="desc color-0">Remaining Seats: 1</div>
+                </div><button class="btn br-6px order-btn" onclick="popup()">register now</button>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="p-1em mt-1em">
+        <div class="container">
+            <div class="row">
+                <div class="w-75 float-l"><ul>
+                    <li class="card-title"><a href="index.html">home</a><a href="browse.html#music">Music</a><a href="browse.html#movies">Movies</a><a href="browse.html">Browse</a><a href="events.html">Events</a><a href="membership.html">Membership</a><a href="aboutus.html#contact">Contact</a><a href="aboutus.html">About</a></li>
+                    <li class="card-title mt-1em">follow us: <div class="socials"><a href="https://www.youtube.com/" target="_blank" class="youtube"><i class="fa-brands fa-youtube"></i></a><a href="https://twitter.com/" target="_blank" class="twitter"><i class="fa-brands fa-twitter"></i></a><a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a><a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://www.whatsapp.com/" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a><a href="https://www.tiktok.com/" target="_blank" class="tiktok"><i class="fa-brands fa-tiktok"></i></a></div></li>
+                    <li class="card-desc mt-1em fs-08em">Support : <a href="mailto:muhammadmohsinkhan.aptech@gmail.com" target="_blank">rhythmhouse@support.com</a> or <a href="tel:+923000000000" target="_blank">+92 300 0000000</a></li>
+                    <li class="card-desc mt-1em fs-08em" title="Made by Team B : Mohsin Khan">rhythmhouse.com is a property of RhythmHouse Co.,Ltd. ©2069 All Rights Reserved.</li>
+                    <li class="card-desc">This site is protected by reCAPTCHA and the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.</li>
+                </ul></div>
+                <div class="w-25 float-l lgh trans"><img src="images/logo.png" width="100%" alt="Rhythm house logo"></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
